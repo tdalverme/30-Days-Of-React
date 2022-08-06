@@ -1,4 +1,4 @@
-const users = {
+const usuarios = {
     Alex: {
         email: 'alex@alex.com',
         skills: ['HTML', 'CSS', 'JavaScript'],
@@ -55,7 +55,7 @@ let maxSkills = 0
 let maxPerson = undefined
 let maxPersonName = ''
 
-for (const [key, value] of Object.entries(users)) {
+for (const [key, value] of Object.entries(usuarios)) {
     if (value.skills.length > maxSkills) {
         maxPerson = value
         maxPersonName = key
@@ -69,7 +69,7 @@ console.log(`${maxPersonName} knows ${maxPerson.skills}`)
 let loggedInUsers = 0
 let moreThan50PointsUsers = 0
 
-for (const [_, value] of Object.entries(users)) {
+for (const [_, value] of Object.entries(usuarios)) {
     if (value.isLoggedIn) {
         loggedInUsers++
     }
@@ -83,7 +83,7 @@ console.log('Logged in users:', loggedInUsers)
 console.log('Number of users with more than 50 points:', moreThan50PointsUsers)
 
 // 3. Find people who are MERN stack developer from the users object
-for (const [key, value] of Object.entries(users)) {
+for (const [key, value] of Object.entries(usuarios)) {
     let mernStack = ['MongoDB', 'Express', 'Node', 'React']
     let isMernDev = mernStack.every((val) => {
         return value.skills.indexOf(val) !== -1
@@ -95,7 +95,7 @@ for (const [key, value] of Object.entries(users)) {
 }
 
 // 4. Set your name in the users object without modifying the original users object
-let copyUsers = Object.assign({}, users)
+let copyUsers = Object.assign({}, usuarios)
 
 copyUsers['Tomas'] = { 
     email: 'tomas@tomas.com',
@@ -105,15 +105,15 @@ copyUsers['Tomas'] = {
     points: 60
 }
 
-console.log(users)
+console.log(usuarios)
 console.log(copyUsers)
 console.log(copyUsers['Tomas'])
 
 // 5. Get all keys or properties of users object
-console.log(Object.keys(users))
+console.log(Object.keys(usuarios))
 
 // 6. Get all the values of users object
-console.log(Object.values(users))
+console.log(Object.values(usuarios))
 
 // 7. Use the countries object to print a country name, capital, populations and languages.
 const countries = [
