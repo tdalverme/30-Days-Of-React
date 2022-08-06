@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>30 Days Of React Challenge</title>
+    </head>
+
+    <body>
+        <div class="root"></div>
+
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            const rootElement = document.querySelector('.root')
+
+            const headerStyle = { border: '5px solid yellow', padding: '15px', color: 'purple', fontSize: '14px', fontFamily: 'Helvetica Neue', }
+            const footerStyle = { border: '5px solid yellow', padding: '15px', color: 'purple', fontSize: '10px', marginTop: '10px' }
+            const appStyle = { backgroundColor: 'grey' }
+            const info = {
+                name: 'Tomás Dal Verme',
+                country: 'Argentina',
+                gender: 'Male',
+                email: 'tdalverme@hotmail.com',
+                phone: '+54 9 11 3294 2223'
+            }
+
+            const user = (
+                <header style={headerStyle}>
+                    <h1>{ info.name }</h1>
+                    <p>{ info.country }</p>
+                    <p>{ info.gender }</p>
+                    <p>{ info.email }</p>
+                    <p>{ info.phone }</p>
+                </header>
+            )
+            
+            const footer = (
+                <footer style={footerStyle}>
+                    <p>Copyright 2022</p>
+                </footer>
+            )
+
+            const app = (
+                <div style={appStyle}>
+                    {user}
+                    {footer}
+                </div>
+            )
+
+            ReactDOM.render(app, rootElement)
+        </script>
+    </body>
+</html>
+
+<!-- Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable -->
+<!-- Write a footer JSX element -->
+
+<!-- Exercises: Inline Styles -->
+<!-- Create a style object for the main JSX -->
+<!-- Create a style object for the footer and app JSX -->
+<!-- Add more styles to the JSX elements -->
+
+<!-- Exercises: Internal Styles -->
+<!-- Apply different styles to your JSX elements -->
+
+<!-- Exercise: Inject data to JSX -->
+<!-- Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object) -->
