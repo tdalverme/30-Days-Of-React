@@ -54,3 +54,69 @@ let reverseArray = function (arr) {
 }
 
 console.log(reverseArray([1, 2, 3, 4]))
+
+// 6. Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+let capitalizeArray = function (arr) {
+    return arr.map((value) => { return value.toUpperCase() })
+}
+
+console.log(capitalizeArray(['tomas', 'dal', 'verme']))
+
+// 7. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+let addItem = function (arr, item) {
+    arr.push(item)
+    return arr
+}
+
+console.log(addItem([1, 2, 3], 4))
+
+// 8. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+let removeItem = function (arr, index) {
+    arr.splice(index, 1)
+    return arr
+}
+
+console.log(removeItem([1, 2, 3, 4, 5], 3))
+
+// 9. Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+let evensAndOdds = function (number) {
+    let evens = Math.floor(number / 2) + 1
+    let odds = Math.floor(number / 2)
+
+    if (number % 2 !== 0) {
+        odds++
+    }
+
+    console.log(`The number of evens are ${evens}`)
+    console.log(`The number of odds are ${odds}`)
+}
+
+evensAndOdds(10);
+
+// 10. Write a function which takes any number of arguments and return the sum of the arguments
+let sum = function (...args) {
+    let sum = 0
+
+    for (let i = 0; i < args.length; i++) {
+        sum += args[i]    
+    }
+
+    return sum
+}
+
+console.log(sum(1, 2, 3, 4))
+
+// 11. Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+let userIdGenerator = function () {
+    let result           = '';
+    let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charactersLength = characters.length;
+
+    for ( var i = 0; i < 7; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+
+   return result;
+}
+
+console.log(userIdGenerator())
