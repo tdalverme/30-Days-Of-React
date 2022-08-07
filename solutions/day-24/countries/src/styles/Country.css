@@ -1,0 +1,38 @@
+@import './constants.css';
+
+.country {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0 0;
+    padding: 2rem;
+    flex: 1;
+    min-width: 20rem;
+    inline-size: 0px; 
+}
+
+.country__flag {
+    max-height: 5rem;
+    align-self: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.country__name {
+    font-family: var(--font);
+    font-size: 2rem;
+    align-self: center;
+    margin: 1em 0;
+}
+
+.country__info {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .country {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}

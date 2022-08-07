@@ -1,0 +1,24 @@
+@import './constants.css';
+
+.header {
+    padding: 1.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 2.5vw;
+    font-family: var(--font);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: darkorange;
+}
+
+.header__subtitle {
+    font-size: 3vw;
+    font-family: var(--font);
+    font-weight: bold;
+}

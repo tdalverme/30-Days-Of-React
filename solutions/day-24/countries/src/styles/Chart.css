@@ -1,0 +1,22 @@
+@import './constants.css';
+
+.chart {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart__title {
+    font-family: var(--font);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.chart__chartContainer {
+    margin: 1rem;
+    width: 100%;
+    flex-direction: column;
+}

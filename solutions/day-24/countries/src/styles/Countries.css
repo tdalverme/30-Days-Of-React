@@ -1,0 +1,8 @@
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 1rem 2rem 3rem;
+    padding: 1rem
+}

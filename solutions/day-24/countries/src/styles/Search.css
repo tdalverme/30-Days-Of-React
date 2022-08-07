@@ -1,0 +1,36 @@
+@import './constants.css';
+
+.search {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.search__bar {
+    background-color: floralwhite;
+    border: 3px solid bisque;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    width: 80vw;
+    color: gray;
+    margin-bottom: 1.5rem;
+    font-family: var(--font);
+    font-weight: 100;
+}
+
+.search__bar:hover, .search__bar:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px bisque;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.search__chartIcon {
+    width: 5vw;
+}
